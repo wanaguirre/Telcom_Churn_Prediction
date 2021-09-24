@@ -28,7 +28,7 @@ In this project we predicted which customers are likely to churn based on certai
 
   - PhoneService - is the telephone service connected (Yes, No)
 
-  -  MultipleLines - are multiple phone lines connected (Yes, No, No phone service)
+  - MultipleLines - are multiple phone lines connected (Yes, No, No phone service)
 
   - InternetService - client’s Internet service provider (DSL, Fiber optic, No)
 
@@ -62,6 +62,7 @@ In this project we predicted which customers are likely to churn based on certai
     - 5986 rows and 22 columns 
     - Remove two columns "Unnamed: 0" and "customerID"
     - Feature distribution: Histogramm of all numerical features
+    - 
     - Correlation among the numerical features: Strong correlation (0.83) between "TotalCharges" and "tenure"
     - Check for imbalance between the two classes in "Curn": 4300 times "0" and 1587 times "1"
 
@@ -102,16 +103,16 @@ In this project we predicted which customers are likely to churn based on certai
     - Tuned RandomForest: 0.8257
     - Best parameters of tuned CatBoost: depth 9, l2_leaf_reg 7, random_strength 0.8, n_estimators 210, eta 0.15
     - Confusion matrix: TP 1131, FN 189, FP 276, TN 200
-    - 
 
 
   - Feature Interpretation (SHAP): 
+  
+![Download](https://user-images.githubusercontent.com/89683936/134678619-e105e72f-59c2-4f64-b7b5-be88af29f57c.png)
 
 <br/> :chart_with_upwards_trend: **Results:**
+- The clients that have been subscribed for the longest, are less likely to unsubscribe.
+- The clients with longer contract durations, are less likely to unsubscribe.
+- The clients that do not subscribe to additional services, such as Online Security and Tech Support, are more likely to unsubscribe.
+- The clients that pay their bills electronically, they are more likely to unsubscribe compared to clients with other payment type.
+- The clients with the highest monthly payment is, are more likely to unsubscribe.
 
-- tenure:
-- monthly payment
-
-<br/> :speech_balloon: **Recommendations:**
-
--Monthly Payment: Try
