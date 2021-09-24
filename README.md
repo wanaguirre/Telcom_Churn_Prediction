@@ -81,10 +81,13 @@ In this project we predicted which customers are likely to churn based on certai
     - Pipeline: we created pipelines for both the categorical (incl. OneHotEncoder) and the numeric data (incl. PowerTransformer and StandardScaler) as well as a preprocessor (ColumnTransformer) to combine these two pipelines
     - Why PowerTransformer: to make numeric data more Gaussian-line
     
-  - Superviced Machine Learning Algorithm:
+  - Superviced Machine Learning Algorithm - some theory:
     - Supervised Machine Learning: The training data/ labels feeding to the algorithm includes the desired solutions (Churn)
     - Classification Algorithm: uses input training data to predict the likelihood that subsequent data will fall into one of the predetermined categories.
     - Binary Classifier: Distinguishes between the two classes "Yes" and "No"
+    - About CatBoostClassifier (Multiclass and Binary Classification):CatBoost (Category Boosting) is an algorithm for gradient boosting on decision trees. It is a readymade classifier in scikit-learn’s conventions terms that would deal with categorical features automatically. (source: https://www.kaggle.com/prashant111/catboost-classifier-in-python). Catboost offers a new technique called Minimal Variance Sampling (MVS), which is a weighted sampling version of Stochastic Gradient Boosting. In this technique, the weighted sampling happens in the tree-level and not in the split-level. The observations for each boosting tree are sampled in a way that maximizes the accuracy of split scoring (Source: https://medium.com/riskified-technology/xgboost-lightgbm-or-catboost-which-boosting-algorithm-should-i-use-e7fda7bb36bc).
+    - About LightGradientBoostMachine (LightGBM):is an algorithm for gradient boosting on decision trees. lightGBM offers gradient-based one-side sampling (GOSS) that selects the split using all the instances with large gradients (i.e., large error) and a random sample of instances with small gradients. In order to keep the same data distribution when computing the information gain, GOSS introduces a constant multiplier for the data instances with small gradients. Thus, GOSS achieves a good balance between increasing speed by reducing the number of data instances and keeping the accuracy for learned decision trees. This method is not the default method for LightGBM, so it should be selected explicitly (source: https://medium.com/riskified-technology/xgboost-lightgbm-or-catboost-which-boosting-algorithm-should-i-use-e7fda7bb36bc)
+    - About RandomForestClassifier (Multiclass and Binary Classification): a classification algorithm consisting of many decisions trees. It uses bagging and feature randomness when building each individual tree to try to create an uncorrelated forest of trees whose prediction by committee is more accurate than that of any individual tree.
     
   - Superviced Machine Learning - Model & Hyperparameter Tuning and Evaluation(pycaret and sklearn):
     - Metric: F1 (combination of recall and precision)
@@ -96,11 +99,16 @@ In this project we predicted which customers are likely to churn based on certai
     - Tuned LightGradientBoostingMachine: 0.8318
     - Tuned RandomForest: 0.8257
     - Best parameters of tuned CatBoost: depth 9, l2_leaf_reg 7, random_strength 0.8, n_estimators 210, eta 0.15
-    - prediction:
-    - Confusion matrix: 
+    - prediction:??
+    - Confusion matrix: ??
 
-  - Feature Interpretation (SHAP)
+  - Feature Interpretation (SHAP): 
 
 <br/> :chart_with_upwards_trend: **Results:**
 
+- tenure:
+- monthly payment
+
 <br/> :speech_balloon: **Recommendations:**
+
+-Monthly Payment: Try
