@@ -2,11 +2,11 @@
 
 <br/> :office: **Background:**
 
-Any business wants to maximize the number of customers. To achieve this goal, it is important not only to try to attract new ones, but also to retain existing ones. Retaining a client will cost the company less than attracting a new one. In addition, a new client may be weakly interested in business services and it will be difficult to work with him, while old clients already have the necessary data on interaction with the service.
+Customer churn in the telecom industry poses one of the most significant risks to loss of revenue. The average churn rate in the telecom industry is approximately 1.9% per month across the four major carriers, but could rise as high as 67% annually for [prepaid services](https://www.omnisci.com/blog/strategies-for-reducing-churn-rate-in-the-telecom-industry). Since the cost of acquiring new customers is up to 25 times higher than the cost of retaining them, fostering customer loyalty is key. 
 
-Accordingly, predicting the churn, we can react in time and try to keep the client who wants to leave. Based on the data about the services that the client uses, we can make him a special offer, trying to change his decision to leave the operator. This will make the task of retention easier to implement than the task of attracting new users, about which we do not know anything yet.
+With low switching costs and an abundance of alternative providers, customer satisfaction is the most effective means of reducing customer churn in telecom. And the most effective means of improving the customer experience is fully taking advantage of the vast streams of rich telecom customer data. Because based on this data we can make him a special offer, trying to change his decision to leave the operator.
 
-You are provided with a dataset from a telecommunications company. The data contains information about almost six thousand users, their demographic characteristics, the services they use, the duration of using the operator's services, the method of payment, and the amount of payment.
+Through this project, and with the dataset provided from a [telecommunications company](https://www.kaggle.com/radmirzosimov/telecom-users-dataset). The data contains information about almost six thousand users, their demographic characteristics, the services they use, the duration of using the operator's services, the method of payment, and the amount of payment.
 
 <br/> :thought_balloon: **Task:** 
 
