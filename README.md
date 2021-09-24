@@ -91,6 +91,8 @@ In this project we predicted which customers are likely to churn based on certai
     
   - Superviced Machine Learning - Model & Hyperparameter Tuning and Evaluation(pycaret and sklearn):
     - Metric: F1 (combination of recall and precision)
+    - Recall: ratio of positive instances that are correctly detected by the classifier (TP/(TP+FN))
+    - Precision: Accuracy of positive predicitons (TP/(TP+FP))
     - Model Selection (pycaret): CatBoost, RandomForest, LightGradientBoostMachine
     - CatBoost: F1-score 0.8372
     - LightGradientBoostingMachine: F1-score 0.8324
