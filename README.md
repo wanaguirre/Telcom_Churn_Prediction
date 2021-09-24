@@ -90,7 +90,7 @@ In this project we predicted which customers are likely to churn based on certai
     - About RandomForestClassifier (Multiclass and Binary Classification): a classification algorithm consisting of many decisions trees. It uses bagging and feature randomness when building each individual tree to try to create an uncorrelated forest of trees whose prediction by committee is more accurate than that of any individual tree.
     
   - Superviced Machine Learning - Model & Hyperparameter Tuning and Evaluation(pycaret and sklearn):
-    - Metric: F1 (combination of recall and precision)
+    - Metric: F1 (combination of recall and precision), because we cared for both Recall (reducing FN, to catch as many as possible of those customers who are likely to churn) and Precision (reducing FP, as we had a list of 6000 customers and any action to retain existing customers will also cost money)
     - Recall: ratio of positive instances that are correctly detected by the classifier (TP/(TP+FN))
     - Precision: Accuracy of positive predicitons (TP/(TP+FP))
     - Model Selection (pycaret): CatBoost, RandomForest, LightGradientBoostMachine
@@ -101,8 +101,9 @@ In this project we predicted which customers are likely to churn based on certai
     - Tuned LightGradientBoostingMachine: 0.8318
     - Tuned RandomForest: 0.8257
     - Best parameters of tuned CatBoost: depth 9, l2_leaf_reg 7, random_strength 0.8, n_estimators 210, eta 0.15
-    - prediction:??
-    - Confusion matrix: ??
+    - Confusion matrix: TP 1131, FN 189, FP 276, TN 200
+    - 
+
 
   - Feature Interpretation (SHAP): 
 
