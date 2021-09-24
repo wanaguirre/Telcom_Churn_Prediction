@@ -62,7 +62,6 @@ In this project we predicted which customers are likely to churn based on certai
     - 5986 rows and 22 columns 
     - Remove two columns "Unnamed: 0" and "customerID"
     - Feature distribution: Histogramm of all numerical features
-    - 
     - Correlation among the numerical features: Strong correlation (0.83) between "TotalCharges" and "tenure"
     - Check for imbalance between the two classes in "Curn": 4300 times "0" and 1587 times "1"
 
